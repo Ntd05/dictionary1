@@ -1,0 +1,9 @@
+yellow	vàng
+green	xanh lá
+blue	xanh dương
+red	đỏ
+pink	hồng
+purple	tím
+tomato	quả cà chua
+watermelon	quả dưa hấu
+polar bear	gấu bắc cực

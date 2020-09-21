@@ -3,7 +3,7 @@ package com.company;
 import java.util.LinkedList;
 
 public class Dictionary {
-    Word[] words_List = new Word[1000];
+    Word[] words_List = new Word[10000];
     int words_Available;
 
     public void add_Word(Word word) {
@@ -13,8 +13,6 @@ public class Dictionary {
 
     Dictionary() {
         words_Available = 0;
-        Word temp = new Word("apple", "táo");
-        add_Word(temp);
     }
 
 

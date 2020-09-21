@@ -3,6 +3,9 @@ package com.company;
 public class Word {
     public String enWord;
     public String vnWord;
+    //public String type;
+    //public String pronunciation;
+    //public String audio;
     public Word() {
         enWord = "unknown";
         vnWord = "không xác định";

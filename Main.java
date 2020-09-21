@@ -6,6 +6,6 @@ public class Main {
         DictionaryManagement management1 = new DictionaryManagement();
         management1.insertFromFile();
         management1.showAllWords();
-        management1.dictionaryLookup("apple");
+        management1.dictionarySearcher("ap");
     }
 }

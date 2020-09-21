@@ -29,7 +29,6 @@ public class DictionaryManagement {
     public void insertFromFile() {
         FileInputStream inputStream = null;
         String fileName = "C:\\Users\\Admin\\IdeaProjects\\dictionary\\src\\com\\company\\dictionaries.txt";
-        //inputStream = new FileInputStream("dictionaries.txt");
         try (Stream<String> stream = Files.lines(Paths.get(fileName), StandardCharsets.UTF_8)) {
             stream.forEach(line -> {
                 String vnTemp = "";
@@ -44,7 +43,6 @@ public class DictionaryManagement {
                         }
 
                     }
-
                     if (check) {
                         vnTemp += line.charAt(i);
                     }
@@ -55,8 +53,6 @@ public class DictionaryManagement {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
     public void dictionaryLookup(String word) {
         for (int i = 0; i < dictionary.words_Available; i++) {
@@ -64,6 +60,23 @@ public class DictionaryManagement {
                 System.out.println(dictionary.words_List[i].vnWord);
                 break;
             }
+        }
+    }
+    public void dictionarySearcher(String pathOfWord) {
+        int count = 0;
+        for (int i = 0; i < dictionary.words_Available; i++) {
+            boolean check = true;
+            for (int j = 0; j < pathOfWord.length(); j++) {
+                if (pathOfWord.charAt(j) != dictionary.words_List[i].enWord.charAt(j)) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check) {
+                System.out.println(dictionary.words_List[i].enWord);
+                count++;
+            }
+            if (count == 9) break;
         }
     }
 }

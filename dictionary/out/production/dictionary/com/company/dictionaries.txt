@@ -63,4 +63,4 @@ advise	khuyên, khuyên bảo, răn bảo
 affair	việc
 affect	làm ảnh hưởng, tác động đến
 afford	có thể, có đủ khả năng, điều kiện 
-afraid	sợ, sợ hãi, hoảng sợ
+afraid	sợ, sợ hãi, hoảng sợtemperature	tạm thời

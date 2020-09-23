@@ -63,51 +63,5 @@ advise	khuyên, khuyên bảo, răn bảo
 affair	việc
 affect	làm ảnh hưởng, tác động đến
 afford	có thể, có đủ khả năng, điều kiện 
-afraid	sợ, sợ hãi, hoảng sợ
-lion	sư tửapple 	quả táotemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờitemperature	tạm thờiorange	quả camtemperature	tạm thờiorange	quả camtemperature	tạm thời
+afraid	sợ, sợ hãi, hoảng sợtemperature	tạm thời
 orange	quả cam
-temperature	tạm thời
-
-orange	quả cam
-
-temperature	tạm thời
-
-orange	quả cam
-
-temperature	tạm thời
-
-orange	quả cam
-
-temperature	tạm thời
-
-orange	quả cam
-
-temperature	tạm thời
-
-orange	quả cam
-
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-orange	quả cam
-temperature	tạm thời
-temperature	tạm thời
-temperature	tạm thời
-temperature	tạm thời
-temperature	tạm thời

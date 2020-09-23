@@ -1,15 +1,19 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.OutputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+import us.monoid.web.BinaryResource;
+import us.monoid.web.Resty;
+
+import java.io.*;
+import java.net.*;
+import java.text.MessageFormat;
 
 public class Translator {
     private static final String CLIENT_ID = "FREE_TRIAL_ACCOUNT";
     private static final String CLIENT_SECRET = "PUBLIC_SECRET";
     private static final String ENDPOINT = "http://api.whatsmate.net/v1/translation/translate";
+    private static final String BASE_URL = "http://translate.google.com/translate_tts?ie=UTF-8&q={0}&tl={1}&prev=input&client=tw-ob";
 
     public static void TranslateAString(String text) throws Exception {
         String fromLang = "en";
@@ -57,4 +61,30 @@ public class Translator {
         conn.disconnect();
     }
 
+    public static void pronunciation(String text) {
+        try {
+            File f = new File("translate.mp3");
+            String sentence = URLEncoder.encode(text, "UTF-8");
+            String urlString = MessageFormat.format(BASE_URL, sentence, "de");
+            BinaryResource res = new Resty().bytes(new URI(urlString));
+            res.save(f);
+
+            FileInputStream in = new FileInputStream(f);
+
+            Player p = new Player(in);
+
+            p.play();
+
+            p.close();
+
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (JavaLayerException e) {
+            e.printStackTrace();
+        }
+    }
 }
